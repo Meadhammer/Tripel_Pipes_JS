@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Tripel Pipes - formulario</title>
+    <link rel="shortcut icon" href="./img/logopipa1.png"> <!-- imagen generica -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header id="encabezado">
+        <div id="top" class="encabezado__logo">
+            <h1 class="logo__texto1">Tripel Pipes</h1>
+            <h3 class="logo__texto2">Pipas artesanales en maderas alternativas</h3>
+        </div>
+        <nav class="encabezado__menu">            
+            <ul>
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./catalogo.html">Catálogo</a></li>
+                <li><a href="./empresa.html">Quienes Somos</a></li>
+                <li><a href="./blog.html">Comunidad</a></li>
+                <li><a href="./Formulario.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="encabezado__search"></div>
+    </header>
+    <main id="form">
+        <section class="form">
+            <h2>Formulario de contacto</h2>
+            <form action="enviar.php" method="get">
+                <div>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" placeholder="Ingrese su nombre" required>
+                </div>
+                <div>    
+                    <label for="apellido">Apellido</label>
+                    <input type="text" id="apellido" placeholder="Ingrese su apellido" required>
+                </div>
+                <div>
+                    <label for="edad">Fecha de nacimiento</label>
+                    <input type="date" name="edad" id="edad">
+                </div>
+                <div>
+                    <label for="email">e-mail</label>
+                    <input type="email" id="email" placeholder="Ingrese un email válido" required>
+                </div>
+                <div>
+                    <label for="telefono">Teléfono</label>
+                    <input type="number" name="telefono" id="telefono" min="10" placeholder="Ingrese un nro de telefono de al menos 10 digitos">
+                </div>
+                <div>
+                    <dl>
+                        <dt>
+                            <label for="paises">País</label>
+                            <select name="paises" id="paises">
+                                <option value="00">Seleccione una opcion</option>
+                                <option value="01">Argentina</option>
+                            </select>
+                        </dt>
+                        <dd>
+                            <label for="region">Provincia</label>
+                            <select name="region" id="region">
+                                <option value="00">Seleccione una opcion</option>
+                                <option value="01">Buenos Aires</option>
+                                <option value="02">Córdoba</option>
+                                <option value="03">Santa Fé</option>
+                            </select>
+                        </dd>
+                    </dl>
+                </div>
+                <div>
+                    <label for="encuesta">Ya has probado alguna de nuestras pipas?</label>
+                    <input type="radio" name="encuesta" id="encuesta1"> SI
+                    <input type="radio" name="encuesta" id="encuesta2"> NO
+                </div>
+                <div>
+                    <label for="caja">Consulta</label>
+                    <br>
+                    <textarea name="caja" id="caja" cols="40" rows="10"></textarea>
+                </div>
+                <div>
+                    <ul>
+                        <li><input type="checkbox" name="news" id=""> Desea recibir newsletters?</li>
+                        <li><input type="checkbox" name="acepto" id="" required> Aceptar los términos y condiciones</li>
+                    </ul>
+                </div>
+            <input type="submit" value="enviar">
+            <input type="reset" value="Borrar todo">
+            </form>
+    
+        </section>
+    </main>
+    <footer id="pieDePagina">
+        <a href="#top">Volver arriba</a>
+        <a href="./index.html">Volver al Inicio</a>
+        <a href="https:/www.google.com/" target="_blank">Ir a la pagina de Google</a>
+    </footer>
+
+</body>
+</html>

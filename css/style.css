@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Tiro+Gurmukhi:ital@0;1&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Tiro Gurmukhi', serif;
+}
+
+/* general */
+#encabezado {
+    background-color: wheat;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    padding: 20px;
+    height: 265px;
+}
+#encabezado .encabezado__logo {
+    display: block;
+    background-color: wheat;
+    background-image: url(../img/logopipa.png);/* imagen generica */
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    min-height: 240px;
+}
+.encabezado__logo .logo__texto1 {
+    color: orangered;
+    text-align: justify;
+    margin: 20px;
+    font-family: 'Lobster', cursive;
+}
+.encabezado__logo .logo__texto2 {
+    color: #943712;
+    text-align: center;
+    margin: 10px;
+    padding-top: 130px;
+    font-variant: small-caps;
+}
+#encabezado .encabezado__menu {
+    display: inline-block;
+}
+#encabezado .encabezado__menu ul {
+    display: flex;
+    list-style: none;
+}
+#encabezado .encabezado__menu ul li a {
+    text-decoration: none;
+    color: whitesmoke;
+    background-color: olivedrab;
+    margin: 0 15px;
+    padding: 15px;
+    border-radius: 5px;
+}
+#encabezado .encabezado__menu ul li a:hover {
+    background-color: orangered;
+}
+#pieDePagina {
+    background-color: wheat;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 5px;
+    height: 75px;
+}
+#pieDePagina a {
+    margin-left: 50px;
+    font-size: medium;
+    color: olivedrab;
+}
+#pieDePagina a:hover {
+    color: orangered;
+}
+
+/* main */
+#intro {
+    background-color: wheat;
+    background-image: url(../img/frontimage2.jfif);/* imagen generica */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 650px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+#intro .intro__info {
+    position: relative;
+}
+#intro .intro__info h2 {
+    text-align: center;
+    color: whitesmoke;
+    font-size: 150px;
+}
+#catalogo {
+    background-color: blanchedalmond;
+    padding: 15px;
+}
+#catalogo h2 {
+    font-family: 'Lobster', cursive;
+    color: orangered;
+    font-size: 40px;
+    font-style: italic;
+}
+#catalogo h2 a {
+    font-family: 'Lobster', cursive;
+    color: orangered;
+    font-size: 40px;
+    font-style: italic;
+}
+#catalogo h2 a:hover {
+    color: olivedrab;
+}
+#catalogo h3 {
+    font-family: 'Lobster', cursive;
+    color: olivedrab;
+    font-size: 20px;
+    font-style: normal;
+    padding: 20px;
+}
+#catalogo .catalogo__grid {
+    background-color: blanchedalmond;
+    padding: 15px;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 30px;
+}
+#catalogo .catalogo__grid .grid__item {
+    margin: 20px;
+    padding-left: 50px;
+}
+#catalogo .catalogo__grid .grid__item img {
+    width: 300px;
+    height: auto;
+}
+#catalogo .catalogo__grid .grid__item .item__desc {
+    margin: 5px;
+    padding: 10px 50px 5px 20px;
+}
+#catalogo .catalogo__grid .grid__item .item__desc dt {
+    font-weight: bold;
+    font-size: large;
+}
+#catalogo .catalogo__grid .grid__item .item__desc dd {
+    padding-top: 10px;
+    text-align: justify;
+    font-size: medium;
+}
+.item__desc input {
+    text-decoration: none;
+    color: whitesmoke;
+    background-color: olivedrab;
+    margin: 0 5px;
+    padding: 5px;
+    border-radius: 5px;
+    border: #943712;
+}
+.item__desc input:hover {
+    background-color: orangered;
+}
+
+#contactoDirecto {
+    background-color: #943712;
+    color: whitesmoke;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row nowrap;
+    align-items: center;
+    padding: 20px;
+    height: 150px;
+}
+.contactoDirecto {
+    display: block;
+    margin: 20px;
+    padding: 0 50px;
+}
+.contactoDirecto h3 {
+    text-align: center;
+    padding: 5px 50px;
+}
+.contactoDirecto p {
+    text-align: justify;
+    padding: 5px;
+}
+#contactoDirecto .redesSociales {
+    display: block;
+}
+#whoAmI {
+    background-color: blanchedalmond;
+}
+.whoAmI h2 {
+    font-family: 'Lobster', cursive;
+    color: orangered;
+    font-size: 40px;
+    font-style: italic;
+    text-align: center;
+    display: block;
+    justify-content: center;
+    padding: 3%;
+}
+.whoAmI__desc {
+    padding: 2% 5%;
+}
+.whoAmI__desc h3 {
+    font-family: 'Lobster', cursive;
+    color: olivedrab;
+    font-size: 20px;
+    font-style: normal;
+    padding: 0 0 3% 0;
+    text-align: center;
+}
+.whoAmI__desc p {
+    padding: 0 15% 3% 15%;
+}
+#blog {
+    background-color: blanchedalmond;
+}
+.blog {
+    padding: 1% 2%;
+}
+.blog h2 {
+    font-family: 'Lobster', cursive;
+    color: orangered;
+    font-size: 3em;
+    font-style: italic;
+    text-align: center;
+    display: block;
+    justify-content: center;
+    padding: 3%;
+}
+.blog__desc {
+    padding-bottom: 5%;
+}
+.blog__desc h3 {
+    font-family: 'Lobster', cursive;
+    color: olivedrab;
+    font-size: 2em;
+    font-style: normal;
+    padding: 1.5%;
+    text-align: left;
+}
+.blog__desc h4 {
+    color: orangered;
+    font-weight: bold;
+    font-size: 1.2em;
+    padding: 0.5%;
+}
+.blog__desc ul {
+    padding: 0.5% 0 0.5% 2%;
+    text-decoration: none;
+}
+.blog__desc li {
+    padding: 0.5%;
+}
+.blog__desc p {
+    color: black;
+    font-size: 0.9em;
+    padding: ;
+}
+.blog__desc li iframe {
+    padding: 2%;
+}
+#form {
+    background-color: blanchedalmond;
+}
+.form {
+    padding: 0 8%;
+}
+.form h2 {
+    font-family: 'Lobster', cursive;
+    color: orangered;
+    font-size: 3em;
+    font-style: italic;
+    text-align: center;
+    display: block;
+    justify-content: center;
+    padding: 3%;
+}
+.form form {
+    padding: 3%
+}
+.form form div {
+    padding-bottom: 2%;
+}
+
+
+
