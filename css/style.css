@@ -18,9 +18,10 @@
     height: 265px;
 }
 #encabezado .encabezado__logo {
-    display: block;
+    display: flex;
+    align-items: flex-end;
     background-color: wheat;
-    background-image: url(../img/logopipa.png);/* imagen generica */
+    background-image: url(../img/logotrip.png);/* imagen generica */
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -28,6 +29,7 @@
 }
 .encabezado__logo .logo__texto1 {
     color: orangered;
+    display: none;
     text-align: justify;
     margin: 20px;
     font-family: 'Lobster', cursive;
@@ -39,14 +41,14 @@
     padding-top: 130px;
     font-variant: small-caps;
 }
-#encabezado .encabezado__menu {
+.encabezado__menu {
     display: inline-block;
 }
-#encabezado .encabezado__menu ul {
+.encabezado__menu .menu {
     display: flex;
     list-style: none;
 }
-#encabezado .encabezado__menu ul li a {
+.encabezado__menu li a {
     text-decoration: none;
     color: whitesmoke;
     background-color: olivedrab;
@@ -54,8 +56,18 @@
     padding: 15px;
     border-radius: 5px;
 }
-#encabezado .encabezado__menu ul li a:hover {
+.encabezado__menu li a:hover {
     background-color: orangered;
+    transition: 0.3s ease;
+}
+.encabezado__menu ul input[type=checkbox] {
+    display: none;
+} 
+
+.encabezado__menu .hamburger {
+    display: none;
+    font-size: 24px;
+    user-select: none;
 }
 #pieDePagina {
     background-color: wheat;
@@ -75,7 +87,7 @@
     color: orangered;
 }
 
-/* main */
+/* secciones */
 #intro {
     background-color: wheat;
     background-image: url(../img/frontimage2.jfif);/* imagen generica */
@@ -98,18 +110,18 @@
 }
 #catalogo {
     background-color: blanchedalmond;
-    padding: 15px;
+    padding: 3%;
 }
 #catalogo h2 {
     font-family: 'Lobster', cursive;
     color: orangered;
-    font-size: 40px;
+    font-size: 3em;
     font-style: italic;
 }
 #catalogo h2 a {
     font-family: 'Lobster', cursive;
     color: orangered;
-    font-size: 40px;
+    font-size: 1em;
     font-style: italic;
 }
 #catalogo h2 a:hover {
@@ -118,35 +130,34 @@
 #catalogo h3 {
     font-family: 'Lobster', cursive;
     color: olivedrab;
-    font-size: 20px;
+    font-size: 1.7em;
     font-style: normal;
-    padding: 20px;
+    padding: 0.8em;
 }
-#catalogo .catalogo__grid {
+.catalogo__grid {
     background-color: blanchedalmond;
-    padding: 15px;
-    display: flex;
-    flex-flow: row wrap;
-    gap: 30px;
+    padding: 1em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1em;
 }
-#catalogo .catalogo__grid .grid__item {
-    margin: 20px;
-    padding-left: 50px;
+.catalogo__grid .grid__item {
+    margin: 1.5em;
 }
-#catalogo .catalogo__grid .grid__item img {
+.catalogo__grid .grid__item img {
     width: 300px;
     height: auto;
 }
-#catalogo .catalogo__grid .grid__item .item__desc {
-    margin: 5px;
-    padding: 10px 50px 5px 20px;
+.catalogo__grid .grid__item .item__desc {
+    margin: 0.2em;
+    padding: 0.8em 2.3em 0.2em 1em;
 }
-#catalogo .catalogo__grid .grid__item .item__desc dt {
+.catalogo__grid .grid__item .item__desc dt {
     font-weight: bold;
     font-size: large;
 }
-#catalogo .catalogo__grid .grid__item .item__desc dd {
-    padding-top: 10px;
+.catalogo__grid .grid__item .item__desc dd {
+    padding-top: 0.8em;
     text-align: justify;
     font-size: medium;
 }
@@ -154,8 +165,8 @@
     text-decoration: none;
     color: whitesmoke;
     background-color: olivedrab;
-    margin: 0 5px;
-    padding: 5px;
+    margin: 0 0.3em;
+    padding: 0.3em;
     border-radius: 5px;
     border: #943712;
 }
@@ -174,8 +185,10 @@
     height: 150px;
 }
 .contactoDirecto {
-    display: block;
-    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1.2em;
     padding: 0 50px;
 }
 .contactoDirecto h3 {
@@ -185,9 +198,6 @@
 .contactoDirecto p {
     text-align: justify;
     padding: 5px;
-}
-#contactoDirecto .redesSociales {
-    display: block;
 }
 #whoAmI {
     background-color: blanchedalmond;
@@ -259,7 +269,7 @@
 .blog__desc p {
     color: black;
     font-size: 0.9em;
-    padding: ;
+    padding: 0.5%;
 }
 .blog__desc li iframe {
     padding: 2%;
@@ -287,5 +297,78 @@
     padding-bottom: 2%;
 }
 
+/* media */
+@media (max-width: 1060px) {
+    #encabezado {
+        flex-flow: column;
+    }
+    .encabezado__search {
+        display: none;
+    }
+}
+@media (max-width: 1370px) {
+    .grid__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .item__desc {
+        text-align: center;
+    }
+}
+@media (min-width: 1371px) {
+    .grid__item {
+        grid-gap: 1em;
+        grid-column: auto;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+}
+@media (max-width: 768px) {
+    .encabezado__menu .menu { 
+        display:none;
+        position: absolute;
+        background-color: olivedrab;
+        right: 0;
+        left: 0;
+        text-align: center;
+        padding: 16px 0;
+    }
+    .encabezado__menu .menu li a {
+        padding: 0;
+    }
+    .encabezado__menu .menu li a:hover {
+        display: inline-block;
+        background-color: olivedrab;
+        color: orangered;
+        transition: 0.3s ease;
+    }
+    .encabezado__menu .menu li + li {
+        margin-top: 2.7em;
+    }
+    .encabezado__menu input[type=checkbox]:checked ~ .menu {
+        display: block;
+    }
+    .encabezado__menu .hamburger {
+        display: block;
+    }
+    #contactoDirecto {
+        flex-flow: column;
+        height: auto;
+    }
+    #intro {
+        min-height: 370px;
+    }
+    .intro__info {
+        display: none;
+    }
+    #catalogo {
+        text-align: center;
+    }
+    .catalogo__grid {
+        grid-template-columns: 1fr;
+    }
+}
 
 

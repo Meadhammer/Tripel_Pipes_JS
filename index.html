@@ -7,20 +7,25 @@
     <title>Tripel Pipes - index</title>
     <link rel="shortcut icon" href="./img/logopipa1.png"> <!-- imagen generica -->
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 <body>
     <header id="encabezado">
         <div id="top" class="encabezado__logo">
             <h1 class="logo__texto1">Tripel Pipes</h1>
-            <h3 class="logo__texto2">Pipas artesanales en maderas alternativas</h3>
+            <h3 class="logo__texto2 animate__animated animate__backInRight animate__delay-2s">Pipas artesanales en maderas alternativas</h3>
         </div>
         <nav class="encabezado__menu">            
             <ul>
-                <li><a href="./index.html">Inicio</a></li>
-                <li><a href="./catalogo.html">Catálogo</a></li>
-                <li><a href="./empresa.html">Quienes Somos</a></li>
-                <li><a href="./blog.html">Comunidad</a></li>
-                <li><a href="./Formulario.html">Contacto</a></li>
+                <input type="checkbox" name="" id="checkbox_toggle">
+                <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+                <div class="menu animate__animated animate__backInDown">
+                    <li><a href="./index.html">Inicio</a></li>
+                    <li><a href="./catalogo.html">Catálogo</a></li>
+                    <li><a href="./empresa.html">Quienes Somos</a></li>
+                    <li><a href="./blog.html">Comunidad</a></li>
+                    <li><a href="./Formulario.html">Contacto</a></li>
+                </div>
             </ul>
         </nav>
         <div class="encabezado__search"></div>
@@ -28,18 +33,17 @@
     <main>
         <section id="intro">
             <div class="intro__info">
-                <h2>Pipas artenasales</h2>
+                <h2 class="animate__animated animate__pulse animate__infinite">Pipas artenasales</h2>
             </div>
         </section>
         <section id="catalogo">
             <h2>Novedades</h2>
             <div class="catalogo__grid">
-                <table class="grid__item"> <!-- imagenes genericas -->
-                    <tr>
-                        <td>
+                <article class="grid__item"> <!-- imagenes genericas -->
+                        <div class="item__img">
                             <img src="./img/pipa001.jpg" alt="pipa001">
-                        </td>
-                        <td class="item__desc">
+                        </div>
+                        <div class="item__desc">
                             <dl>
                                 <dt>Pipa001</dt>
                                 <dd><p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -50,15 +54,13 @@
                                     <input type="button" value="Ver más">
                                 </dd>
                             </dl>
-                        </td>
-                    </tr>
-                </table>
-                <table class="grid__item"> <!-- imagenes genericas -->
-                    <tr>
-                        <td>
-                            <img src="./img/pipa002.jpg" alt="pipa002">
-                        </td>
-                        <td class="item__desc">
+                        </div>
+                </article>
+                <article class="grid__item"> <!-- imagenes genericas -->
+                        <div class="item__img">
+                            <img src="./img/pipa002.jpg" alt="pipa001">
+                        </div>
+                        <div class="item__desc">
                             <dl>
                                 <dt>Pipa002</dt>
                                 <dd><p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -69,15 +71,13 @@
                                     <input type="button" value="Ver más">
                                 </dd>
                             </dl>
-                        </td>
-                    </tr>
-                </table>
-                <table class="grid__item"> <!-- imagenes genericas -->
-                    <tr>
-                        <td>
-                            <img src="./img/pipa003.jpg" alt="pipa003">
-                        </td>
-                        <td class="item__desc">
+                        </div>
+                </article>
+                <article class="grid__item"> <!-- imagenes genericas -->
+                        <div class="item__img">
+                            <img src="./img/pipa003.jpg" alt="pipa001">
+                        </div>
+                        <div class="item__desc">
                             <dl>
                                 <dt>Pipa003</dt>
                                 <dd><p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -88,15 +88,13 @@
                                     <input type="button" value="Ver más">
                                 </dd>
                             </dl>
-                        </td>
-                    </tr>
-                </table>
-                <table class="grid__item"> <!-- imagenes genericas -->
-                    <tr>
-                        <td>
-                            <img src="./img/pipa004.jpg" alt="pipa004">
-                        </td>
-                        <td class="item__desc">
+                        </div>
+                </article>
+                <article class="grid__item"> <!-- imagenes genericas -->
+                        <div class="item__img">
+                            <img src="./img/pipa004.jpg" alt="pipa001">
+                        </div>
+                        <div class="item__desc">
                             <dl>
                                 <dt>Pipa004</dt>
                                 <dd><p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -107,9 +105,8 @@
                                     <input type="button" value="Ver más">
                                 </dd>
                             </dl>
-                        </td>
-                    </tr>
-                </table>
+                        </div>
+                </article>
             </div>
             <h2><a href="./catalogo.html">Catálogo completo</a></h2>                      
         </section>
@@ -127,7 +124,7 @@
                 <p>e-mail: info@mail.com</p>
             </div>
             <div class="redesSociales">
-                <a href="https://www.facebook.com/TripelArtesanias"><img src="./img/socialmedia1.png" alt="socialmedia" height="150px" width="auto"></a>
+                <a href="https://www.facebook.com/TripelArtesanias"><img src="./img/facebook.png" alt="socialmedia" height="50px" width="auto"></a>
             </div>
         </section>
     </main>

@@ -16,11 +16,15 @@
         </div>
         <nav class="encabezado__menu">            
             <ul>
-                <li><a href="./index.html">Inicio</a></li>
-                <li><a href="./catalogo.html">Catálogo</a></li>
-                <li><a href="./empresa.html">Quienes Somos</a></li>
-                <li><a href="./blog.html">Comunidad</a></li>
-                <li><a href="./Formulario.html">Contacto</a></li>
+                <input type="checkbox" name="" id="checkbox_toggle">
+                <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+                <div class="menu">
+                    <li><a href="./index.html">Inicio</a></li>
+                    <li><a href="./catalogo.html">Catálogo</a></li>
+                    <li><a href="./empresa.html">Quienes Somos</a></li>
+                    <li><a href="./blog.html">Comunidad</a></li>
+                    <li><a href="./Formulario.html">Contacto</a></li>
+                </div>
             </ul>
         </nav>
         <div class="encabezado__search"></div>
@@ -29,105 +33,95 @@
         <h2>Catálogo</h2>
         <h3>Disponibles</h3>
         <div class="catalogo__grid">
-            <table class="grid__item"> <!-- imagenes genericas -->
-                <tr>
-                    <td>
-                        <img src="./img/pipa001.jpg" alt="pipa001">
-                    </td>
-                    <td class="item__desc">
-                        <dl>
-                            <dt>Pipa001</dt>
-                            <dd><p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                                <p>Alias iure voluptate totam quae explicabo culpa debitis!</p>
-                            </dd>
-                            <dd><p>$ price</p></dd>
-                            <dd>
-                                <input type="button" value="Ver más">
-                            </dd>
-                        </dl>
-                    </td>
-                </tr>
-            </table>
-            <table class="grid__item"> <!-- imagenes genericas -->
-                <tr>
-                    <td>
-                        <img src="./img/pipa002.jpg" alt="pipa002">
-                    </td>
-                    <td class="item__desc">
-                        <dl>
-                            <dt>Pipa002</dt>
-                            <dd><p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                                <p>Alias iure voluptate totam quae explicabo culpa debitis!</p>
-                            </dd>
-                            <dd><p>$ price</p></dd>
-                            <dd>
-                                <input type="button" value="Ver más">
-                            </dd>
-                        </dl>
-                    </td>
-                </tr>
-            </table>
-            <table class="grid__item"> <!-- imagenes genericas -->
-                <tr>
-                    <td>
-                        <img src="./img/pipa003.jpg" alt="pipa003">
-                    </td>
-                    <td class="item__desc">
-                        <dl>
-                            <dt>Pipa003</dt>
-                            <dd><p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                                <p>Alias iure voluptate totam quae explicabo culpa debitis!</p>
-                            </dd>
-                            <dd><p>$ price</p></dd>
-                            <dd>
-                                <input type="button" value="Ver más">
-                            </dd>
-                        </dl>
-                    </td>
-                </tr>
-            </table>
-            <table class="grid__item"> <!-- imagenes genericas -->
-                <tr>
-                    <td>
-                        <img src="./img/pipa004.jpg" alt="pipa004">
-                    </td>
-                    <td class="item__desc">
-                        <dl>
-                            <dt>Pipa004</dt>
-                            <dd><p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                                <p>Alias iure voluptate totam quae explicabo culpa debitis!</p>
-                            </dd>
-                            <dd><p>$ price</p></dd>
-                            <dd>
-                                <input type="button" value="Ver más">
-                            </dd>
-                        </dl>
-                    </td>
-                </tr>
-            </table>        
+            <article class="grid__item"> <!-- imagenes genericas -->
+                <div class="item__img">
+                    <img src="./img/pipa001.jpg" alt="pipa001">
+                </div>
+                <div class="item__desc">
+                    <dl>
+                        <dt>Pipa001</dt>
+                        <dd><p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <p>Alias iure voluptate totam quae explicabo culpa debitis!</p>
+                        </dd>
+                        <dd><p>$ price</p></dd>
+                        <dd>
+                            <input type="button" value="Ver más">
+                        </dd>
+                    </dl>
+                </div>
+        </article>
+        <article class="grid__item"> <!-- imagenes genericas -->
+                <div class="item__img">
+                    <img src="./img/pipa002.jpg" alt="pipa001">
+                </div>
+                <div class="item__desc">
+                    <dl>
+                        <dt>Pipa002</dt>
+                        <dd><p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <p>Alias iure voluptate totam quae explicabo culpa debitis!</p>
+                        </dd>
+                        <dd><p>$ price</p></dd>
+                        <dd>
+                            <input type="button" value="Ver más">
+                        </dd>
+                    </dl>
+                </div>
+        </article>
+        <article class="grid__item"> <!-- imagenes genericas -->
+                <div class="item__img">
+                    <img src="./img/pipa003.jpg" alt="pipa001">
+                </div>
+                <div class="item__desc">
+                    <dl>
+                        <dt>Pipa003</dt>
+                        <dd><p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <p>Alias iure voluptate totam quae explicabo culpa debitis!</p>
+                        </dd>
+                        <dd><p>$ price</p></dd>
+                        <dd>
+                            <input type="button" value="Ver más">
+                        </dd>
+                    </dl>
+                </div>
+        </article>
+        <article class="grid__item"> <!-- imagenes genericas -->
+                <div class="item__img">
+                    <img src="./img/pipa004.jpg" alt="pipa001">
+                </div>
+                <div class="item__desc">
+                    <dl>
+                        <dt>Pipa004</dt>
+                        <dd><p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <p>Alias iure voluptate totam quae explicabo culpa debitis!</p>
+                        </dd>
+                        <dd><p>$ price</p></dd>
+                        <dd>
+                            <input type="button" value="Ver más">
+                        </dd>
+                    </dl>
+                </div>
+        </article>        
     </section>
     <section id="catalogo">
         <h3>No disponibles</h3>
         <div class="catalogo__grid">
-            <table class="grid__item"> <!-- imagenes genericas -->
-                <tr>
-                    <td>
-                        <img src="./img/pipa005.jpg" alt="pipa005">
-                    </td>
-                    <td class="item__desc">
-                        <dl>
-                            <dt>Pipa005</dt>
-                            <dd><p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                                <p>Alias iure voluptate totam quae explicabo culpa debitis!</p>
-                            </dd>
-                            <dd><p>Vendida!</p></dd>
-                            <dd>
-                                <input type="button" value="Ver más">
-                            </dd>
-                        </dl>
-                    </td>
-                </tr>
-            </table>
+            <article class="grid__item"> <!-- imagenes genericas -->
+                <div class="item__img">
+                    <img src="./img/pipa004.jpg" alt="pipa001">
+                </div>
+                <div class="item__desc">
+                    <dl>
+                        <dt>Pipa004</dt>
+                        <dd><p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <p>Alias iure voluptate totam quae explicabo culpa debitis!</p>
+                        </dd>
+                        <dd><p>$ price</p></dd>
+                        <dd>
+                            <input type="button" value="Ver más">
+                        </dd>
+                    </dl>
+                </div>
+            </article>
         </div>
     </section>
     <footer id="pieDePagina">
