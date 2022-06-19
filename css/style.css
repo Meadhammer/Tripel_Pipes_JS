@@ -35,7 +35,7 @@
     font-family: 'Lobster', cursive;
 }
 .encabezado__logo .logo__texto2 {
-    color: #943712;
+    color: #cf962a;
     text-align: center;
     margin: 10px;
     padding-top: 130px;
@@ -147,12 +147,12 @@
 .catalogo__grid .grid__item {
     margin: 1.5em;
 }
-.catalogo__grid .grid__item img {
+.catalogo__grid .grid__item .img__prev {
     width: 300px;
     height: auto;
     transition: all 1s;
 }
-.catalogo__grid .grid__item img:hover {
+.catalogo__grid .grid__item .img__prev:hover {
     transform: scale(200%) translate(2em);
 }
 .catalogo__grid .grid__item .item__desc {
@@ -183,30 +183,35 @@
     background-color: orangered;
 }
 
-#contactoDirecto {
+#barraDeContactos {
     background-color: #943712;
     color: whitesmoke;
     display: flex;
     justify-content: space-between;
     flex-flow: row nowrap;
     align-items: center;
-    padding: 20px;
-    height: 150px;
+    padding: 0.5em;
+    height: auto;
 }
-.contactoDirecto {
+.barraDeContactos {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 1.2em;
-    padding: 0 50px;
+    margin: 0.5em;
+    padding: 0 1.5em;
 }
-.contactoDirecto h3 {
+.barraDeContactos h3 {
     text-align: center;
-    padding: 5px 50px;
+    padding: 0.1em 1em;
+    font-size: 1.8em;
 }
-.contactoDirecto p {
+.barraDeContactos p {
     text-align: justify;
-    padding: 5px;
+    padding: 0.1em 0.3em;
+    font-size: 1em;
+}
+.redesSociales {
+    padding: 3em;
 }
 #whoAmI {
     background-color: blanchedalmond;
@@ -388,7 +393,7 @@
     .encabezado__menu .hamburger {
         display: block;
     }
-    #contactoDirecto {
+    #barraDeContactos {
         flex-flow: column;
         height: auto;
     }
@@ -404,7 +409,7 @@
     .catalogo__grid {
         grid-template-columns: 1fr;
     }
-    .catalogo__grid .grid__item img:hover {
+    .catalogo__grid .grid__item .img__prev:hover {
         transform: scale(200%) translate(0);
     }
 }
