@@ -32,70 +32,155 @@
         <div class="encabezado__search"></div>
     </header>
     <main id="form">
-        <section class="form">
-            <h2>Formulario de contacto</h2>
-            <form action="enviar.php" method="get">
-                <div class="form__text">
-                    <label for="nombre">Nombre</label>
-                    <input type="text" id="nombre" placeholder="Ingrese su nombre" required>
+        <h2>Formulario de contacto</h2>
+        <form action="enviar.php" method="get">
+            <!-- nuevo formulario con BS -->
+            <div class="container-lg">
+                <div class="row mb-3 g-3 align-items-center justify-content-center">
+                    <div class="col-4 text-end">
+                      <label for="Nombre" class="col-form-label">Nombre</label>
+                    </div>
+                    <div class="col-4">
+                      <input type="text" id="Nombre" placeholder="Cosme" class="form-control" aria-describedby="NameHelpInline">
+                    </div>
+                    <div class="col-4">
+                      <span id="NameHelpInline" class="form-text">
+                        Ingrese su nombre de pila
+                      </span>
+                    </div>
                 </div>
-                <div class="form__text">    
-                    <label for="apellido">Apellido</label>
-                    <input type="text" id="apellido" placeholder="Ingrese su apellido" required>
+                <div class="row mb-3 g-3 align-items-center justify-content-center">
+                    <div class="col-4 text-end">
+                      <label for="Apellido" class="col-form-label">Apellido</label>
+                    </div>
+                    <div class="col-4">
+                      <input type="text" id="Apellido" placeholder="Fulanito" class="form-control" aria-describedby="SurnameHelpInline">
+                    </div>
+                    <div class="col-4">
+                      <span id="SurnameHelpInline" class="form-text">
+                        Ingrese su apellido
+                      </span>
+                    </div>
                 </div>
-                <div>
-                    <label for="edad">Fecha de nacimiento</label>
-                    <input type="date" name="edad" id="edad">
+                <div class="row mb-3 g-3 align-items-center justify-content-center">
+                    <div class="col-4 text-end">
+                      <label for="edad" class="col-form-label">Edad</label>
+                    </div>
+                    <div class="col-4">
+                      <input type="date" id="edad" class="form-control" aria-describedby="AgeHelpInline">
+                    </div>
+                    <div class="col-4">
+                      <span id="AgeHelpInline" class="form-text">
+                        Ingrese su fecha de nacimiento
+                      </span>
+                    </div>
                 </div>
-                <div class="form__text">
-                    <label for="email">e-mail</label>
-                    <input type="email" id="email" placeholder="Ingrese un email válido" required>
+                <div class="row mb-3 g-3 align-items-center justify-content-center">
+                    <div class="col-4 text-end">
+                      <label for="email" class="col-form-label">e-mail</label>
+                    </div>
+                    <div class="col-4">
+                      <input type="email" id="email" placeholder="cosmefulanito@mail.com" class="form-control" aria-describedby="emailHelpInline">
+                    </div>
+                    <div class="col-4">
+                      <span id="emailHelpInline" class="form-text">
+                        Ingrese una dirección de correo electrónico válida
+                      </span>
+                    </div>
                 </div>
-                <div class="form__text">
-                    <label for="telefono">Teléfono</label>
-                    <input type="number" name="telefono" id="telefono" min="10" placeholder="Ingrese un nro de telefono de al menos 10 digitos">
+                <div class="row mb-3 g-3 align-items-center justify-content-center">
+                    <div class="col-4 text-end">
+                      <label for="telefono" class="col-form-label">Whatsapp</label>
+                    </div>
+                    <div class="col-4">
+                      <input type="number" id="telefono" placeholder="11 3333 5555" class="form-control" aria-describedby="cellHelpInline">
+                    </div>
+                    <div class="col-4">
+                      <span id="cellHelpInline" class="form-text">
+                        Ingrese un número de contacto (sin espacios ni guiones)
+                      </span>
+                    </div>
                 </div>
-                <div>
-                    <dl>
-                        <dt>
-                            <label for="paises">País</label>
-                            <select name="paises" id="paises">
-                                <option value="00">Seleccione una opcion</option>
-                                <option value="01">Argentina</option>
-                            </select>
-                        </dt>
-                        <dd>
-                            <label for="region">Provincia</label>
-                            <select name="region" id="region">
-                                <option value="00">Seleccione una opcion</option>
-                                <option value="01">Buenos Aires</option>
-                                <option value="02">Córdoba</option>
-                                <option value="03">Santa Fé</option>
-                            </select>
-                        </dd>
-                    </dl>
+                <div class="row mb-3 g-3 align-items-center justify-content-center">
+                    <div class="col-2 text-end">
+                      <label for="paises" class="col-form-label">País</label>
+                    </div>
+                    <div class="col-auto">
+                        <select id="paises" class="form-select" aria-label="Disabled select example" disabled aria-describedby="paisHelpInline">
+                            <option selected>Argentina</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+                    <div class="col-auto">
+                      <span id="paisHelpInline" class="form-text">
+                      -->
+                      </span>
+                    </div>
+                    <div class="col-auto text-end">
+                      <label for="regiones" class="col-form-label">Región</label>
+                    </div>
+                    <div class="col-auto">
+                        <select id="regiones" class="form-select" aria-label="Default select example" aria-describedby="regionHelpInline">
+                            <option selected>Bs. As. Zona Norte</option>
+                            <option value="1">C.A.B.A.</option>
+                            <option value="2">Bs. As. Zona Oeste</option>
+                            <option value="3">Bs. As. Zona Sur</option>
+                            <option value="4">Interior</option>
+                        </select>
+                    </div>
+                    <div class="col-2">
+                      <span id="regionHelpInline" class="form-text">
+                        Selecione la región más representativa
+                      </span>
+                    </div>
                 </div>
-                <div>
-                    <label for="encuesta">Ya has probado alguna de nuestras pipas?</label>
-                    <input type="radio" name="encuesta" id="encuesta1"> SI
-                    <input type="radio" name="encuesta" id="encuesta2"> NO
+                <div class="row mt-3 g-3 align-items-center justify-content-center">
+                    <div class="col-4">
+                        <label for="encuesta" class="col-form-label">¿Has probado nuestras pipas?</label>
+                      </div>
+                </div>                
+                <div class="row mb-3 g-3 align-items-center justify-content-center">
+                    <div class="col-4">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="encuesta" id="encuesta1">
+                            <label class="form-check-label" for="encuesta1">
+                              Si
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="encuesta" id="encuesta2" checked>
+                            <label class="form-check-label" for="encuesta2">
+                              No
+                            </label>
+                        </div>
+                    </div>
                 </div>
-                <div>
-                    <label for="caja">Consulta</label>
-                    <br>
-                    <textarea name="caja" id="caja" cols="40" rows="10"></textarea>
+                <div class="row mt-3 g-3 align-items-center justify-content-center">
+                    <div class="col-4">
+                        <span id="CommentHelpInline" class="form-text">
+                            Escribenos tu consuta aquí
+                        </span>
+                    </div>
                 </div>
-                <div>
-                    <ul>
-                        <li><input type="checkbox" name="news" id=""> Desea recibir newsletters?</li>
-                        <li><input type="checkbox" name="acepto" id="" required> Aceptar los términos y condiciones</li>
-                    </ul>
+                <div class="row mb-3 g-3 align-items-center justify-content-center">
+                    <div class="col-4">
+                        <div class="form-floating">
+                            <textarea class="form-control caja" placeholder="Leave a comment here" id="floatingTextarea" aria-describedby="CommentHelpInline"></textarea>
+                            <label for="floatingTextarea">Comenta tu inquietud</label>
+                        </div>
+                    </div>
                 </div>
-            <input type="submit" value="enviar" class="boton">
-            <input type="reset" value="Borrar todo" class="boton">
-            </form>
-    
-        </section>
+                <div class="row pb-5 g-3 align-items-center justify-content-center">
+                    <div class="col-4">
+                        <input type="submit" value="enviar" class="boton">
+                        <input type="reset" value="Borrar todo" class="boton">
+                    </div>
+                </div>
+            </div>
+            <!-- fin nvo form c/BS -->    
+        </form>
     </main>
     <footer id="pieDePagina">
         <a href="#top">Volver arriba</a>
