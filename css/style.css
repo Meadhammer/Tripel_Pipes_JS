@@ -112,13 +112,14 @@
 }
 #catalogo {
     background-color: blanchedalmond;
-    padding: 3%;
 }
 #catalogo h2 {
     font-family: 'Lobster', cursive;
     color: orangered;
     font-size: 3em;
     font-style: italic;
+    padding-top: 5rem;
+    text-align: center;
 }
 #catalogo h2 a {
     font-family: 'Lobster', cursive;
@@ -135,9 +136,10 @@
     color: olivedrab;
     font-size: 1.7em;
     font-style: normal;
-    padding: 0.8em;
+    text-align: center;
+    padding: 2rem;
 }
-.catalogo__grid {
+/* .catalogo__grid {
     background-color: blanchedalmond;
     padding: 1em;
     display: grid;
@@ -167,7 +169,7 @@
     padding-top: 0.8em;
     text-align: justify;
     font-size: medium;
-}
+} */
 .boton {
     text-decoration: none;
     font-size: 0.9em;
@@ -346,7 +348,7 @@
         display: none;
     }
 }
-@media (max-width: 1370px) {
+/* @media (max-width: 1370px) {
     .grid__item {
         display: flex;
         flex-direction: column;
@@ -364,7 +366,7 @@
         display: grid;
         grid-template-columns: 1fr 2fr;
     }
-}
+} */
 @media (max-width: 768px) {
     .encabezado__menu .menu { 
         display:none;
@@ -403,7 +405,7 @@
     .intro__info {
         display: none;
     }
-    #catalogo {
+    /* #catalogo {
         text-align: center;
     }
     .catalogo__grid {
@@ -411,7 +413,7 @@
     }
     .catalogo__grid .grid__item .img__prev:hover {
         transform: scale(200%) translate(0);
-    }
+    } */
 }
 
 
