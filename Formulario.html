@@ -37,10 +37,10 @@
             <!-- nuevo formulario con BS -->
             <div class="container-lg">
                 <div class="row mb-3 g-3 align-items-center justify-content-center">
-                    <div class="col-4 text-end">
+                    <div class="col-2 col-md-4 text-end">
                       <label for="Nombre" class="col-form-label">Nombre</label>
                     </div>
-                    <div class="col-4">
+                    <div class="col-8 col-md-4">
                       <input type="text" id="Nombre" placeholder="Cosme" class="form-control" aria-describedby="NameHelpInline">
                     </div>
                     <div class="col-4">
@@ -50,10 +50,10 @@
                     </div>
                 </div>
                 <div class="row mb-3 g-3 align-items-center justify-content-center">
-                    <div class="col-4 text-end">
+                    <div class="col-2 col-md-4 text-end">
                       <label for="Apellido" class="col-form-label">Apellido</label>
                     </div>
-                    <div class="col-4">
+                    <div class="col-8 col-md-4">
                       <input type="text" id="Apellido" placeholder="Fulanito" class="form-control" aria-describedby="SurnameHelpInline">
                     </div>
                     <div class="col-4">
@@ -63,10 +63,10 @@
                     </div>
                 </div>
                 <div class="row mb-3 g-3 align-items-center justify-content-center">
-                    <div class="col-4 text-end">
+                    <div class="col-2 col-md-4 text-end">
                       <label for="edad" class="col-form-label">Edad</label>
                     </div>
-                    <div class="col-4">
+                    <div class="col-8 col-md-4">
                       <input type="date" id="edad" class="form-control" aria-describedby="AgeHelpInline">
                     </div>
                     <div class="col-4">
@@ -76,10 +76,10 @@
                     </div>
                 </div>
                 <div class="row mb-3 g-3 align-items-center justify-content-center">
-                    <div class="col-4 text-end">
+                    <div class="col-2 col-md-4 text-end">
                       <label for="email" class="col-form-label">e-mail</label>
                     </div>
-                    <div class="col-4">
+                    <div class="col-8 col-md-4">
                       <input type="email" id="email" placeholder="cosmefulanito@mail.com" class="form-control" aria-describedby="emailHelpInline">
                     </div>
                     <div class="col-4">
@@ -89,10 +89,10 @@
                     </div>
                 </div>
                 <div class="row mb-3 g-3 align-items-center justify-content-center">
-                    <div class="col-4 text-end">
+                    <div class="col-2 col-md-4 text-end">
                       <label for="telefono" class="col-form-label">Whatsapp</label>
                     </div>
-                    <div class="col-4">
+                    <div class="col-8 col-md-4">
                       <input type="number" id="telefono" placeholder="11 3333 5555" class="form-control" aria-describedby="cellHelpInline">
                     </div>
                     <div class="col-4">
@@ -102,10 +102,10 @@
                     </div>
                 </div>
                 <div class="row mb-3 g-3 align-items-center justify-content-center">
-                    <div class="col-2 text-end">
+                    <div class="col-3 col-sm-2 text-end">
                       <label for="paises" class="col-form-label">País</label>
                     </div>
-                    <div class="col-auto">
+                    <div class="col-8 col-sm-auto">
                         <select id="paises" class="form-select" aria-label="Disabled select example" disabled aria-describedby="paisHelpInline">
                             <option selected>Argentina</option>
                             <option value="1">One</option>
@@ -118,10 +118,10 @@
                       -->
                       </span>
                     </div>
-                    <div class="col-auto text-end">
+                    <div class="col-3 col-sm-auto text-end">
                       <label for="regiones" class="col-form-label">Región</label>
                     </div>
-                    <div class="col-auto">
+                    <div class="col-8 col-sm-auto">
                         <select id="regiones" class="form-select" aria-label="Default select example" aria-describedby="regionHelpInline">
                             <option selected>Bs. As. Zona Norte</option>
                             <option value="1">C.A.B.A.</option>
@@ -160,20 +160,20 @@
                 <div class="row mt-3 g-3 align-items-center justify-content-center">
                     <div class="col-4">
                         <span id="CommentHelpInline" class="form-text">
-                            Escribenos tu consuta aquí
+                            Escribe en el cuadro tu consuta (Refiere la pipa en cuestión por su nombre)
                         </span>
                     </div>
                 </div>
                 <div class="row mb-3 g-3 align-items-center justify-content-center">
-                    <div class="col-4">
+                    <div class="col-auto">
                         <div class="form-floating">
                             <textarea class="form-control caja" placeholder="Leave a comment here" id="floatingTextarea" aria-describedby="CommentHelpInline"></textarea>
-                            <label for="floatingTextarea">Comenta tu inquietud</label>
+                            <label for="floatingTextarea" class="cajaLabel">Comenta aquí</label>
                         </div>
                     </div>
                 </div>
                 <div class="row pb-5 g-3 align-items-center justify-content-center">
-                    <div class="col-4">
+                    <div class="col-auto">
                         <input type="submit" value="enviar" class="boton">
                         <input type="reset" value="Borrar todo" class="boton">
                     </div>
