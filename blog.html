@@ -31,46 +31,156 @@
         </nav>
         <div class="encabezado__search"></div>
     </header>
-    <main id="blog">
+    <main>
         <section class="blog">
             <h2>Comunidad</h2>
             <div class="blog__desc">
                 <h3>Tutorial del día</h3>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/Z604nmFd4Hk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> <!-- elegido al azar -->
+                <div class="blog__tutorial container">
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-lg-6 overflow-hidden">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/Vdxm1T4Lsvk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div><!-- elegido al azar -->
+                <!-- BS accordion -->
+                <div class="accordion accordion-flush" id="otrosTutoriales">
+                    <div class="accordion-item">
+                      <h4 class="accordion-header" id="headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            Otros Tutoriales
+                        </button>
+                      </h4>
+                      <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#otrosTutoriales">
+                        <div class="accordion-body bgLight">
+                            <div class="container">
+                                <div class="row justify-content-center">
+                                    <div class="col-12 col-lg-6 overflow-hidden">
+                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/Vdxm1T4Lsvk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    </div>
+                                    <div class="col-12 col-lg-6 overflow-hidden">
+                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/5j7Z8iaWa9Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    </div>
+                                    <div class="col-12 col-lg-6 overflow-hidden">
+                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/Z604nmFd4Hk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+                                    </div>
+                                </div>
+                            </div><!-- elegido al azar -->
+                      </div>
+                    </div>
+                </div>
+                <!-- fin -->
             </div>
             <div class="blog__desc">
                 <h3>Preguntas frecuentes</h3>
-                <ul>
-                    <li>
-                        <h4>Cómo curar tu pipa nueva</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium corrupti totam qui, eum enim amet eligendi, vel magni quaerat molestias magnam molestiae ducimus corporis fugiat impedit nisi in deserunt unde.</p>
-                    </li>
-                    <li>
-                        <h4>Cómo curar tu pipa nueva</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium corrupti totam qui, eum enim amet eligendi, vel magni quaerat molestias magnam molestiae ducimus corporis fugiat impedit nisi in deserunt unde.</p>
-                    </li>
-                    <li>
-                        <h4>Cómo curar tu pipa nueva</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium corrupti totam qui, eum enim amet eligendi, vel magni quaerat molestias magnam molestiae ducimus corporis fugiat impedit nisi in deserunt unde.</p>
-                    </li>
-                    <li>
-                        <h4>Cómo curar tu pipa nueva</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium corrupti totam qui, eum enim amet eligendi, vel magni quaerat molestias magnam molestiae ducimus corporis fugiat impedit nisi in deserunt unde.</p>
-                    </li>
-                    <li>
-                        <h4>Cómo curar tu pipa nueva</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium corrupti totam qui, eum enim amet eligendi, vel magni quaerat molestias magnam molestiae ducimus corporis fugiat impedit nisi in deserunt unde.</p>
-                    </li>
-                </ul>
-            </div>
+                <!-- Blog c/BS Accordion -->
+                <div class="accordion accordion-flush" id="accordionPanelsStayOpenBlog">
+                    <div class="accordion-item">
+                      <h4 class="accordion-header" id="panelsStayOpen-headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                            Cómo curar tu pipa nueva
+                        </button>
+                      </h4>
+                      <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne" data-bs-parent="#accordionPanelsStayOpenBlog">
+                        <div class="accordion-body bgLight">
+                          <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h4 class="accordion-header" id="panelsStayOpen-headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                            Cómo curar tu pipa nueva
+                        </button>
+                      </h4>
+                      <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo" data-bs-parent="#accordionPanelsStayOpenBlog">
+                        <div class="accordion-body bgLight">
+                          <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h4 class="accordion-header" id="panelsStayOpen-headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                            Cómo curar tu pipa nueva
+                        </button>
+                      </h4>
+                      <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree" data-bs-parent="#accordionPanelsStayOpenBlog">
+                        <div class="accordion-body bgLight">
+                          <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <!-- fin -->                
             <div class="blog__desc">
                 <h3>Webs amigas</h3>
-                <ul>
-                    <li>
-                        <h4>Donde conseguir tu tabaco favorito</h4>
-                        <iframe src="https://www.estatepipesba.com.ar/" frameborder="0" width="400" height="400"></iframe> <!-- elegida al azar -->
-                    </li>
-                </ul>
+                <div class="container">
+                    <h5>Donde conseguir tu tabaco favorito</h5>
+                    <div class="row bgDark mb-5">
+                        <!-- Sitio Amigo 1 -->
+                        <div class="col-12 col-md-6 col-lg-4 overflow-hidden">
+                            <a href="http://www.estatepipesba.com.ar/">Estate Pipes BA</a>
+                            <div>
+                                <iframe src="https://www.estatepipesba.com.ar/" frameborder="0" width="400" height="400"></iframe> <!-- elegida al azar -->
+                            </div>
+                        </div>
+                        <!-- Sitio Amigo 2 -->                       
+                        <div class="col-12 col-md-6 col-lg-4 overflow-hidden">
+                            <a href="http://www.estatepipesba.com.ar/">Estate Pipes BA</a>
+                            <div>
+                                <iframe src="https://www.estatepipesba.com.ar/" frameborder="0" width="400" height="400"></iframe> <!-- elegida al azar -->
+                            </div>
+                        </div>
+                        <!-- Sitio Amigo 3 -->                        
+                        <div class="col-12 col-md-6 col-lg-4 overflow-hidden">
+                            <a href="http://www.estatepipesba.com.ar/">Estate Pipes BA</a>
+                            <div>
+                                <iframe src="https://www.estatepipesba.com.ar/" frameborder="0" width="400" height="400"></iframe> <!-- elegida al azar -->
+                            </div>
+                        </div>                        
+                    </div>                    
+                </div> 
+                <!-- BS accordion -->
+                <div class="accordion accordion-flush" id="otrosTutoriales">
+                    <div class="accordion-item">
+                      <h4 class="accordion-header" id="headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            Más webs de interés
+                        </button>
+                      </h4>
+                      <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#otrosTutoriales">
+                        <div class="accordion-body bgLight">
+                            <div class="container">
+                                <h5>Donde conseguir tu tabaco favorito</h5>
+                                <div class="row bgDark mb-5">
+                                    <!-- Sitio Amigo 1 -->
+                                    <div class="col-12 col-md-6 col-lg-4 overflow-hidden">
+                                        <a href="http://www.estatepipesba.com.ar/">Estate Pipes BA</a>
+                                        <div>
+                                            <iframe src="https://www.estatepipesba.com.ar/" frameborder="0" width="400" height="400"></iframe> <!-- elegida al azar -->
+                                        </div>
+                                    </div>
+                                    <!-- Sitio Amigo 2 -->                       
+                                    <div class="col-12 col-md-6 col-lg-4 overflow-hidden">
+                                        <a href="http://www.estatepipesba.com.ar/">Estate Pipes BA</a>
+                                        <div>
+                                            <iframe src="https://www.estatepipesba.com.ar/" frameborder="0" width="400" height="400"></iframe> <!-- elegida al azar -->
+                                        </div>
+                                    </div>
+                                    <!-- Sitio Amigo 3 -->                        
+                                    <div class="col-12 col-md-6 col-lg-4 overflow-hidden">
+                                        <a href="http://www.estatepipesba.com.ar/">Estate Pipes BA</a>
+                                        <div>
+                                            <iframe src="https://www.estatepipesba.com.ar/" frameborder="0" width="400" height="400"></iframe> <!-- elegida al azar -->
+                                        </div>
+                                    </div>                        
+                                </div>                    
+                            </div>
+                      </div>
+                    </div>
+                </div>
+                <!-- fin -->               
             </div>
         </section>
     </main>

@@ -102,6 +102,15 @@
 .boton:hover {
     background-color: orangered;
 }
+.bgLight {
+    background-color: blanchedalmond;
+}
+.bgMed {
+    background-color: wheat;
+}
+.bgDark {
+    background-color: #943712;
+}
 
 /* secciones */
 #intro {
@@ -185,10 +194,10 @@
 .redesSociales {
     padding: 3em;
 }
-#whoAmI {
+.Institucional {
     background-color: blanchedalmond;
 }
-.whoAmI h2 {
+.Institucional h2 {
     font-family: 'Lobster', cursive;
     color: orangered;
     font-size: 40px;
@@ -198,10 +207,10 @@
     justify-content: center;
     padding: 3%;
 }
-.whoAmI__desc {
+.Institucional__desc {
     padding: 2% 5%;
 }
-.whoAmI__desc h3 {
+.Institucional__desc h3 {
     font-family: 'Lobster', cursive;
     color: olivedrab;
     font-size: 20px;
@@ -209,13 +218,12 @@
     padding: 0 0 3% 0;
     text-align: center;
 }
-.whoAmI__desc p {
+.Institucional__desc p {
     padding: 0 15% 3% 15%;
 }
-#blog {
-    background-color: blanchedalmond;
-}
+
 .blog {
+    background-color: blanchedalmond;
     padding: 1% 2%;
 }
 .blog h2 {
@@ -239,22 +247,47 @@
     padding: 1.5%;
     text-align: left;
 }
-.blog__desc h4 {
+.blog__desc h5 {
     color: orangered;
     font-weight: bold;
-    font-size: 1.2em;
+    font-size: 1.2rem;
+    padding: 0.5%; 
+}
+.blog__desc a {
+    text-decoration: none;
+    font-size: medium;
+    color: wheat;
+    transition: 0.3s ease;
+}
+.blog__desc a:hover {
+    color: olivedrab;
+    background-color: wheat;
+}
+.blog__desc .accordion-button {
+    font-size: inherit;
+    background-color: wheat;
+    color: orangered;
+    font-weight: bold;
+    font-size: 1.1rem;
     padding: 0.5%;
 }
+.blog__desc .accordion-button:not(.collapsed) {
+    color: inherit;
+    background: olivedrab;
+    color: wheat;
+}
+.blog__desc .accordion-button:not(.collapsed)::after {
+    filter: brightness(0%) invert(80%); 
+}
+.blog__desc .accordion-button:focus {
+    box-shadow: inherit;
+}
+
 .blog__desc ul {
     padding: 0.5% 0 0.5% 2%;
     text-decoration: none;
 }
 .blog__desc li {
-    padding: 0.5%;
-}
-.blog__desc p {
-    color: black;
-    font-size: 0.9em;
     padding: 0.5%;
 }
 .blog__desc li iframe {
@@ -266,7 +299,7 @@
 #form h2 {
     font-family: 'Lobster', cursive;
     color: orangered;
-    font-size: 3em;
+    font-size: calc(2rem + 1.2vw);
     font-style: italic;
     text-align: center;
     display: block;
