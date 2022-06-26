@@ -1,0 +1,84 @@
+//usado en todo el sitio
+.encabezado {
+    background-color: $bgMed;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    height: 265px;
+    &__logo {
+        display: flex;
+        align-items: flex-end;
+        background-color: $bgMed;
+        background-image: url(../img_global/logotrip.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        min-height: 240px;
+        .logo__texto1 {
+            display: none;
+            text-align: justify;
+            margin: 20px;
+        }
+        .logo__texto2 {
+            color: $logoColor;
+            text-align: center;
+            margin: 10px;
+            padding-top: 130px;
+            font-family: $font-title;
+            font-variant: small-caps;
+        }
+    }
+    &__menu {
+        display: inline-block;
+        .menu {
+            display: flex;
+            list-style: none;
+            li a {
+                text-decoration: none;
+                color: $bgLight;
+                background-color: $titlesec;
+                margin: 0 15px;
+                padding: 15px;
+                border-radius: 5px;
+                transition: 0.3s ease;
+                &:hover {
+                    background-color: $titleprim;
+                }
+            }
+        }
+        &__menu ul {
+            input[type=checkbox] {
+                display: none;
+            }
+        }
+        .hamburger {
+            display: none;
+            font-size: 24px;
+            user-select: none;
+        }
+    }
+}
+
+//Solo usado en index
+.intro {
+    background-color: $bgMed;
+    background-image: url(../img_global/img_front_001.JPG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 670px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    align-items: center;
+    & &__info {
+        position: relative;
+        h2 {
+            text-align: center;
+            color: $logoColor;
+            font-size: 150px;
+        }
+    }
+}

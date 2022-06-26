@@ -1,0 +1,62 @@
+//media querries
+@media (max-width: 1264px) {
+    .encabezado {
+        flex-flow: column;
+        &__search {
+            display: none;
+    }
+    
+    }
+    .intro {
+        min-height: 470px;
+}
+}
+
+@media (max-width: 768px) {
+    .encabezado {
+        flex-flow: row-reverse;
+        &__menu {
+            .menu { 
+                display:none;
+                position: absolute;
+                background-color: $titlesec;
+                right: 0;
+                left: 0;
+                text-align: center;
+                padding: 16px 0;
+                li a {
+                    padding: 0;
+                    &:hover {
+                        display: inline-block;
+                        background-color: $titlesec;
+                        color: $titleprim;
+                        transition: 0.3s ease;
+                    }
+                }
+                li + li {
+                    margin-top: 2.7em;
+                }
+            }
+            input[type=checkbox]:checked ~ .menu {
+                display: block;
+            }
+            .hamburger {
+                display: block;
+            }
+        }
+    }
+    #barraDeContactos {
+        flex-flow: column;
+        height: auto;
+    }
+    .intro {
+        min-height: 270px;
+        &__info {
+            display: none;
+        }
+    }    
+    #form span {
+        display: none;
+    }
+    
+}

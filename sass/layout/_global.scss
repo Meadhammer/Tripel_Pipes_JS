@@ -1,0 +1,25 @@
+//clases de uso variado
+.boton {
+    text-decoration: none;
+    font-size: 0.9em;
+    color: $bgLight;
+    background-color: $titlesec;
+    margin: 0 0.3em;
+    padding: 0.3em;
+    border-radius: 5px;
+    border: 0.5px $bgDark;
+    transition: 0.3s ease;
+    &:hover {
+        background-color: $titleprim;
+    }
+}
+
+.bgLight {
+    background-color: $bgLight;
+}
+.bgMed {
+    background-color: $bgMed;
+}
+.bgDark {
+    background-color: $bgDark;
+}

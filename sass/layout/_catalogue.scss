@@ -1,0 +1,31 @@
+//catalogo
+.catalogo {
+    h2 {
+        font-family: $font-title;
+        color: $titleprim;
+        font-size: 3em;
+        font-style: italic;
+        padding-top: 5rem;
+        text-align: center;
+        a {
+            font-family: $font-title;
+            color: $titleprim;
+            font-size: 1em;
+            font-style: italic;
+            transition: 0.3s ease;
+            &:hover {
+                color: $titlesec;
+            }
+        }
+    }
+    h3 {
+        font-family: $font-title;
+        color: $titlesec;
+        font-size: 1.7em;
+        font-style: normal;
+        text-align: center;
+        padding: 2rem;
+    }
+}
+
+

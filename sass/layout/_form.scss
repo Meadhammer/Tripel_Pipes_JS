@@ -1,0 +1,23 @@
+
+#form {
+    background-color: $bgLight;
+    & h2 {
+        font-family: $font-title;
+        color: $titleprim;
+        font-size: calc(2rem + 1.2vw);
+        font-style: italic;
+        text-align: center;
+        display: block;
+        justify-content: center;
+        padding: 3rem;
+    }
+    .caja {
+        transition: all 0.5s;
+        &:focus {
+            transform: scale(150%) translateY(1rem);
+        }
+    }
+}
+
+
+

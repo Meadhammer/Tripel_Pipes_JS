@@ -1,0 +1,27 @@
+//Institucional
+.Institucional {
+    h2 {
+        font-family: $font-title;
+        color: $titleprim;
+        font-size: 40px;
+        font-style: italic;
+        text-align: center;
+        display: block;
+        justify-content: center;
+        padding: 3%;
+    }
+    &__desc {
+        padding: 2% 5%;
+        h3 {
+            font-family: $font-title;
+            color: $titlesec;
+            font-size: 20px;
+            font-style: normal;
+            padding: 0 0 3% 0;
+            text-align: center;
+        }
+        p {
+            padding: 0 15% 3% 15%;
+        }
+    }
+}

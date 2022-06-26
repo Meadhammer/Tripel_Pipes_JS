@@ -1,0 +1,404 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Tiro+Gurmukhi:ital@0;1&display=swap");
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, code, em, img, small, strike, strong, sub, sup, tt, b, u, i, ol, ul, li, fieldset, form, label, table, caption, tbody, tfoot, thead, tr, th, td, main, canvas, embed, footer, header, nav, section, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: none;
+     -moz-text-size-adjust: none;
+          text-size-adjust: none;
+  font-family: "Tiro Gurmukhi", serif;
+}
+
+footer, header, nav, section, main {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+.boton {
+  text-decoration: none;
+  font-size: 0.9em;
+  color: blanchedalmond;
+  background-color: olivedrab;
+  margin: 0 0.3em;
+  padding: 0.3em;
+  border-radius: 5px;
+  border: 0.5px #943712;
+  transition: 0.3s ease;
+}
+.boton:hover {
+  background-color: orangered;
+}
+
+.bgLight {
+  background-color: blanchedalmond;
+}
+
+.bgMed {
+  background-color: wheat;
+}
+
+.bgDark {
+  background-color: #943712;
+}
+
+.encabezado {
+  background-color: wheat;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  height: 265px;
+}
+.encabezado__logo {
+  display: flex;
+  align-items: flex-end;
+  background-color: wheat;
+  background-image: url(../img_global/logotrip.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  min-height: 240px;
+}
+.encabezado__logo .logo__texto1 {
+  display: none;
+  text-align: justify;
+  margin: 20px;
+}
+.encabezado__logo .logo__texto2 {
+  color: #cf962a;
+  text-align: center;
+  margin: 10px;
+  padding-top: 130px;
+  font-family: "lobster", cursive;
+  font-variant: small-caps;
+}
+.encabezado__menu {
+  display: inline-block;
+}
+.encabezado__menu .menu {
+  display: flex;
+  list-style: none;
+}
+.encabezado__menu .menu li a {
+  text-decoration: none;
+  color: blanchedalmond;
+  background-color: olivedrab;
+  margin: 0 15px;
+  padding: 15px;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+.encabezado__menu .menu li a:hover {
+  background-color: orangered;
+}
+.encabezado__menu__menu ul input[type=checkbox] {
+  display: none;
+}
+.encabezado__menu .hamburger {
+  display: none;
+  font-size: 24px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.intro {
+  background-color: wheat;
+  background-image: url(../img_global/img_front_001.JPG);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 670px;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.intro .intro__info {
+  position: relative;
+}
+.intro .intro__info h2 {
+  text-align: center;
+  color: #cf962a;
+  font-size: 150px;
+}
+
+#pieDePagina {
+  background-color: wheat;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 3rem;
+  height: 75px;
+}
+#pieDePagina a {
+  margin-left: 50px;
+  font-size: medium;
+  color: olivedrab;
+  transition: 0.3s ease;
+}
+#pieDePagina a:hover {
+  color: orangered;
+}
+
+#barraDeContactos {
+  background-color: #943712;
+  color: blanchedalmond;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row nowrap;
+  align-items: center;
+  padding: 0.5em;
+  height: auto;
+}
+#barraDeContactos .barraDeContactos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0.5em;
+  padding: 0 1.5em;
+}
+#barraDeContactos .barraDeContactos h3 {
+  text-align: center;
+  padding: 0.1em 1em;
+  font-size: 1.8em;
+}
+#barraDeContactos .barraDeContactos p {
+  text-align: justify;
+  padding: 0.1em 0.3em;
+  font-size: 1em;
+}
+#barraDeContactos .redesSociales {
+  padding: 3em;
+}
+
+#form {
+  background-color: blanchedalmond;
+}
+#form h2 {
+  font-family: "lobster", cursive;
+  color: orangered;
+  font-size: calc(2rem + 1.2vw);
+  font-style: italic;
+  text-align: center;
+  display: block;
+  justify-content: center;
+  padding: 3rem;
+}
+#form .caja {
+  transition: all 0.5s;
+}
+#form .caja:focus {
+  transform: scale(150%) translateY(1rem);
+}
+
+.catalogo h2 {
+  font-family: "lobster", cursive;
+  color: orangered;
+  font-size: 3em;
+  font-style: italic;
+  padding-top: 5rem;
+  text-align: center;
+}
+.catalogo h2 a {
+  font-family: "lobster", cursive;
+  color: orangered;
+  font-size: 1em;
+  font-style: italic;
+  transition: 0.3s ease;
+}
+.catalogo h2 a:hover {
+  color: olivedrab;
+}
+.catalogo h3 {
+  font-family: "lobster", cursive;
+  color: olivedrab;
+  font-size: 1.7em;
+  font-style: normal;
+  text-align: center;
+  padding: 2rem;
+}
+
+.Institucional h2 {
+  font-family: "lobster", cursive;
+  color: orangered;
+  font-size: 40px;
+  font-style: italic;
+  text-align: center;
+  display: block;
+  justify-content: center;
+  padding: 3%;
+}
+.Institucional__desc {
+  padding: 2% 5%;
+}
+.Institucional__desc h3 {
+  font-family: "lobster", cursive;
+  color: olivedrab;
+  font-size: 20px;
+  font-style: normal;
+  padding: 0 0 3% 0;
+  text-align: center;
+}
+.Institucional__desc p {
+  padding: 0 15% 3% 15%;
+}
+
+.blog {
+  padding: 1% 2%;
+}
+.blog__desc {
+  padding-bottom: 5%;
+}
+.blog__desc h3 {
+  font-family: "lobster", cursive;
+  color: olivedrab;
+  font-size: 2em;
+  font-style: normal;
+  padding: 1.5%;
+  text-align: left;
+}
+.blog__desc h5 {
+  color: orangered;
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: 0.5%;
+}
+.blog__desc a {
+  text-decoration: none;
+  font-size: medium;
+  color: wheat;
+  transition: 0.3s ease;
+}
+.blog__desc a:hover {
+  color: olivedrab;
+  background-color: wheat;
+}
+.blog__desc .accordion-button {
+  font-size: inherit;
+  background-color: wheat;
+  color: orangered;
+  font-weight: bold;
+  font-size: 1.1rem;
+  padding: 0.5%;
+}
+.blog__desc .accordion-button:not(.collapsed) {
+  color: inherit;
+  background: olivedrab;
+  color: wheat;
+}
+.blog__desc .accordion-button:not(.collapsed)::after {
+  filter: brightness(0%) invert(80%);
+}
+.blog__desc .accordion-button:focus {
+  box-shadow: inherit;
+}
+.blog h2 {
+  font-family: "lobster", cursive;
+  color: orangered;
+  font-size: 3em;
+  font-style: italic;
+  text-align: center;
+  display: block;
+  justify-content: center;
+  padding: 3%;
+}
+
+@media (max-width: 1264px) {
+  .encabezado {
+    flex-flow: column;
+  }
+  .encabezado__search {
+    display: none;
+  }
+
+  .intro {
+    min-height: 470px;
+  }
+}
+@media (max-width: 768px) {
+  .encabezado {
+    flex-flow: row-reverse;
+  }
+  .encabezado__menu .menu {
+    display: none;
+    position: absolute;
+    background-color: olivedrab;
+    right: 0;
+    left: 0;
+    text-align: center;
+    padding: 16px 0;
+  }
+  .encabezado__menu .menu li a {
+    padding: 0;
+  }
+  .encabezado__menu .menu li a:hover {
+    display: inline-block;
+    background-color: olivedrab;
+    color: orangered;
+    transition: 0.3s ease;
+  }
+  .encabezado__menu .menu li + li {
+    margin-top: 2.7em;
+  }
+  .encabezado__menu input[type=checkbox]:checked ~ .menu {
+    display: block;
+  }
+  .encabezado__menu .hamburger {
+    display: block;
+  }
+
+  #barraDeContactos {
+    flex-flow: column;
+    height: auto;
+  }
+
+  .intro {
+    min-height: 270px;
+  }
+  .intro__info {
+    display: none;
+  }
+
+  #form span {
+    display: none;
+  }
+}/*# sourceMappingURL=main.css.map */
