@@ -6,7 +6,7 @@
     font-family: 'Tiro Gurmukhi', serif;
 }
 
-/* general */
+/* global */
 #encabezado {
     background-color: wheat;
     display: flex;
@@ -21,7 +21,7 @@
     display: flex;
     align-items: flex-end;
     background-color: wheat;
-    background-image: url(../img/logotrip.png);/* imagen generica */
+    background-image: url(../img_global/logotrip.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -115,11 +115,11 @@
 /* secciones */
 #intro {
     background-color: wheat;
-    background-image: url(../img/frontimage2.jfif);/* imagen generica */
+    background-image: url(../img_global/img_front_001.JPG);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    min-height: 650px;
+    min-height: 670px;
     display: flex;
     flex-flow: column wrap;
     justify-content: space-around;
@@ -315,13 +315,16 @@
 }
 
 /* media */
-@media (max-width: 1060px) {
+@media (max-width: 1264px) {
     #encabezado {
         flex-flow: column;
     }
     .encabezado__search {
         display: none;
     }
+    #intro {
+        min-height: 470px;
+}
 }
 
 @media (max-width: 768px) {
@@ -360,7 +363,7 @@
         height: auto;
     }
     #intro {
-        min-height: 370px;
+        min-height: 270px;
     }
     .intro__info {
         display: none;
