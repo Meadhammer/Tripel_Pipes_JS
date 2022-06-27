@@ -103,6 +103,7 @@ input {
 .encabezado__logo .logo__texto2 {
   color: #cf962a;
   text-align: center;
+  text-decoration: none;
   margin: 10px;
   padding-top: 130px;
   font-family: "lobster", cursive;
