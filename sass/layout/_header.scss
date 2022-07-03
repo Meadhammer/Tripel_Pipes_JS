@@ -1,6 +1,5 @@
 //usado en todo el sitio
 .encabezado {
-    background-color: $bgMed;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
@@ -10,7 +9,6 @@
     &__logo {
         display: flex;
         align-items: flex-end;
-        background-color: $bgMed;
         background-image: url(../img_global/logotrip.png);
         background-repeat: no-repeat;
         background-size: contain;
@@ -37,13 +35,9 @@
             display: flex;
             list-style: none;
             li a {
-                text-decoration: none;
-                color: $bgLight;
-                background-color: $titlesec;
+                @include btn;
                 margin: 0 15px;
                 padding: 15px;
-                border-radius: 5px;
-                transition: 0.3s ease;
                 &:hover {
                     background-color: $titleprim;
                 }

@@ -1,8 +1,34 @@
-$titleprim: orangered;
-$titlesec: olivedrab;
-$bgLight: blanchedalmond;
-$bgMed: wheat;
-$bgDark: #943712;
-$logoColor: #cf962a;
+$PaletaDeColores: (
+    primario: orangered,
+    secundario: olivedrab,
+    base1: blanchedalmond,
+    base2: wheat,
+    fondo: #943712,
+    oficial: #cf962a,
+    texto: black,
+);
+
+$titleprim: map-get($PaletaDeColores, primario);
+$titlesec: map-get($PaletaDeColores, secundario);
+$bgLight: map-get($PaletaDeColores, base1);
+$bgMed: map-get($PaletaDeColores, base2);
+$bgDark: map-get($PaletaDeColores, fondo);
+$logoColor: map-get($PaletaDeColores, oficial);
 $font-gral: 'Tiro Gurmukhi', serif;
 $font-title: 'lobster', cursive;
+
+@mixin btn {
+    text-decoration: none;
+    color: map-get($PaletaDeColores, base1);
+    background-color: map-get($PaletaDeColores, secundario);
+    border-radius: 5px;
+    transition: 0.3s ease;
+    border: 0.5px solid $bgDark;
+}
+@mixin headding {
+    font-family: $font-title;
+    color: $titleprim;
+    font-size: calc(2rem + 1.2vw);
+    font-style: italic;
+    text-align: center;
+}

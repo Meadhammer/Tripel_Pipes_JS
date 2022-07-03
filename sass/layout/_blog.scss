@@ -48,11 +48,7 @@
         }
     }
     h2 {
-        font-family: $font-title;
-        color: $titleprim;
-        font-size: 3em;
-        font-style: italic;
-        text-align: center;
+        @include headding;
         display: block;
         justify-content: center;
         padding: 3%;

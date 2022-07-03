@@ -2,11 +2,7 @@
 #form {
     background-color: $bgLight;
     & h2 {
-        font-family: $font-title;
-        color: $titleprim;
-        font-size: calc(2rem + 1.2vw);
-        font-style: italic;
-        text-align: center;
+        @include headding;
         display: block;
         justify-content: center;
         padding: 3rem;

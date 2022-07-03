@@ -1,17 +1,12 @@
 //catalogo
 .catalogo {
     h2 {
-        font-family: $font-title;
-        color: $titleprim;
-        font-size: 3em;
-        font-style: italic;
+        @include headding;
         padding-top: 5rem;
-        text-align: center;
-        a {
-            font-family: $font-title;
-            color: $titleprim;
+        a { 
+            @include headding; 
+            padding-top: 5rem;          
             font-size: 1em;
-            font-style: italic;
             transition: 0.3s ease;
             &:hover {
                 color: $titlesec;

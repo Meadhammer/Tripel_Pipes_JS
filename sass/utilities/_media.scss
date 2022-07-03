@@ -26,6 +26,7 @@
                 padding: 16px 0;
                 li a {
                     padding: 0;
+                    border: transparent;
                     &:hover {
                         display: inline-block;
                         background-color: $titlesec;
