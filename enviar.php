@@ -8,8 +8,6 @@ $telefono = $_POST["phone"];
 $region = $_POST["zone"];
 $mensaje = $_POST["mensaje"];
 
-$header .= "Content-Type: text/plain";
-
 $mensaje = "Este mensaje fue enviado por " . $nombre . ",\r\n";
 $mensaje .= "Su edad es " . $edad . ",\r\n";
 $mensaje .= "Su e-mail es " . $mail . ",\r\n";
@@ -21,8 +19,9 @@ $mensaje .= "Enviado el: " . date("d/m/y", time());
 $para = "jftripel@gmail.com";
 $asunto = "Consulta desde TRIPEL PIPES";
 
-mail($para, $asunto, utf8_decode($mensaje), $header);
+mail($para, $asunto, utf8_decode($mensaje));
 
-header("Location:index.html");
+header('Location: index.html');
+die();
 
 ?>
