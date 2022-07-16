@@ -15,7 +15,8 @@ $mensaje .= "Su edad es " . $edad . ",\r\n";
 $mensaje .= "Su e-mail es " . $mail . ",\r\n";
 $mensaje .= "Su teléfono es " . $telefono . ",\r\n";
 $mensaje .= "Su región es " . $region . ",\r\n";
-$mensaje .= "El resutado de la encuesta es " . $encuestaSi $encuestaNo . ",\r\n";
+$mensaje .= "El resutado de la encuesta es " . $encuestaSi . ;
+$mensaje .= . $encuestaNo . ",\r\n";
 $mensaje .= "Mensaje: " . $_POST["mensaje"] . ",\r\n";
 $mensaje .= "Enviado el: " . date("d/m/y", time());
 
