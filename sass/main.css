@@ -197,6 +197,8 @@ input {
   padding: 0 1.5em;
 }
 #barraDeContactos .barraDeContactos h3 {
+  font-family: "Tiro Gurmukhi", serif;
+  color: blanchedalmond;
   text-align: center;
   padding: 0.1em 1em;
   font-size: 1.8em;
@@ -205,6 +207,14 @@ input {
   text-align: justify;
   padding: 0.1em 0.3em;
   font-size: 1em;
+}
+#barraDeContactos .barraDeContactos p a {
+  text-decoration: none;
+  color: inherit;
+  transition: 0.3s ease;
+}
+#barraDeContactos .barraDeContactos p a:hover {
+  color: olivedrab;
 }
 #barraDeContactos .redesSociales {
   padding: 3em;
@@ -221,7 +231,7 @@ input {
   text-align: center;
   display: block;
   justify-content: center;
-  padding: 3rem;
+  padding: 5rem;
 }
 #form .caja {
   transition: all 0.5s;
@@ -268,7 +278,7 @@ input {
   text-align: center;
   display: block;
   justify-content: center;
-  padding: 3%;
+  padding: 5rem;
 }
 .Institucional__desc {
   padding: 2% 5%;
@@ -349,7 +359,7 @@ input {
   text-align: center;
   display: block;
   justify-content: center;
-  padding: 3%;
+  padding: 5rem;
 }
 
 @media (max-width: 1264px) {

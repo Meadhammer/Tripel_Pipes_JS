@@ -33,7 +33,7 @@
     </header>
     <main id="form">
         <h2>Formulario de contacto</h2>
-        <form action="enviar.php" method="get">
+        <form action="../enviar.php" method="POST">
             <!-- nuevo formulario con BS -->
             <div class="container-lg">
                 <div class="row mb-3 g-3 align-items-center justify-content-center">
@@ -41,7 +41,7 @@
                       <label for="Nombre" class="col-form-label">Nombre</label>
                     </div>
                     <div class="col-sm-8 col-md-4">
-                      <input type="text" id="Nombre" placeholder="Cosme" class="form-control" aria-describedby="NameHelpInline">
+                      <input type="text" id="Nombre" name="name" placeholder="Cosme" class="form-control" aria-describedby="NameHelpInline">
                     </div>
                     <div class="col-4">
                       <span id="NameHelpInline" class="form-text">
@@ -54,7 +54,7 @@
                       <label for="Apellido" class="col-form-label">Apellido</label>
                     </div>
                     <div class="col-sm-8 col-md-4">
-                      <input type="text" id="Apellido" placeholder="Fulanito" class="form-control" aria-describedby="SurnameHelpInline">
+                      <input type="text" id="Apellido" name="surname" placeholder="Fulanito" class="form-control" aria-describedby="SurnameHelpInline">
                     </div>
                     <div class="col-4">
                       <span id="SurnameHelpInline" class="form-text">
@@ -67,7 +67,7 @@
                       <label for="edad" class="col-form-label">Edad</label>
                     </div>
                     <div class="col-sm-8 col-md-4">
-                      <input type="date" id="edad" class="form-control" aria-describedby="AgeHelpInline">
+                      <input type="date" id="edad" class="form-control" name="age" aria-describedby="AgeHelpInline">
                     </div>
                     <div class="col-4">
                       <span id="AgeHelpInline" class="form-text">
@@ -80,7 +80,7 @@
                       <label for="email" class="col-form-label">e-mail</label>
                     </div>
                     <div class="col-sm-8 col-md-4">
-                      <input type="email" id="email" placeholder="cosmefulanito@mail.com" class="form-control" aria-describedby="emailHelpInline">
+                      <input type="email" id="email" name="email" placeholder="cosmefulanito@mail.com" class="form-control" aria-describedby="emailHelpInline">
                     </div>
                     <div class="col-4">
                       <span id="emailHelpInline" class="form-text">
@@ -93,7 +93,7 @@
                       <label for="telefono" class="col-form-label">Whatsapp</label>
                     </div>
                     <div class="col-sm-8 col-md-4">
-                      <input type="number" id="telefono" placeholder="11 3333 5555" class="form-control" aria-describedby="cellHelpInline">
+                      <input type="number" id="telefono" name="phone" placeholder="11 3333 5555" class="form-control" aria-describedby="cellHelpInline">
                     </div>
                     <div class="col-4">
                       <span id="cellHelpInline" class="form-text">
@@ -122,7 +122,7 @@
                       <label for="regiones" class="col-form-label">Región</label>
                     </div>
                     <div class="col-8 col-sm-auto">
-                        <select id="regiones" class="form-select" aria-label="Default select example" aria-describedby="regionHelpInline">
+                        <select id="regiones" name="zone" class="form-select" aria-label="Default select example" aria-describedby="regionHelpInline">
                             <option selected>Bs. As. Zona Norte</option>
                             <option value="1">C.A.B.A.</option>
                             <option value="2">Bs. As. Zona Oeste</option>
@@ -144,13 +144,13 @@
                 <div class="row mb-3 g-3 align-items-center justify-content-center">
                     <div class="col-4">
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="encuesta" id="encuesta1">
+                            <input class="form-check-input" type="radio" name="yes" id="encuestaSi">
                             <label class="form-check-label" for="encuesta1">
                               Si
                             </label>
                           </div>
                           <div class="form-check">
-                            <input class="form-check-input" type="radio" name="encuesta" id="encuesta2" checked>
+                            <input class="form-check-input" type="radio" name="no" id="encuestaNo">
                             <label class="form-check-label" for="encuesta2">
                               No
                             </label>
@@ -167,7 +167,7 @@
                 <div class="row mb-3 g-3 align-items-center justify-content-center">
                     <div class="col-auto">
                         <div class="form-floating">
-                            <textarea class="form-control caja" placeholder="Leave a comment here" id="floatingTextarea" aria-describedby="CommentHelpInline"></textarea>
+                            <textarea class="form-control caja" name="mensaje" placeholder="Leave a comment here" id="floatingTextarea" aria-describedby="CommentHelpInline"></textarea>
                             <label for="floatingTextarea" class="cajaLabel">Comenta aquí</label>
                         </div>
                     </div>

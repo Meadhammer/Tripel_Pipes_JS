@@ -31,11 +31,12 @@
         </nav>
         <div class="encabezado__search"></div>
     </header>
-    <section id="catalogue" class="bgLight catalogo">
+    <main>
+      <section id="catalogue" class="bgLight catalogo">
         <h2>Catálogo</h2>
         <h3>Disponibles</h3>
         <!-- reforma con Bootstrap -->
-        <div class="container">
+        <div class="container overflow-hidden">
           <div class="row gy-5 gx-5">
             <!-- Item pipa001 ini -->
             <article class="col-12 col-lg-6 col-xxl-4">
@@ -267,10 +268,9 @@
             <!-- item pipa004 fin -->
           </div>
         </div>
-
-    <section id="catalogue__non" class="pt-5 bgLight catalogo">
+    <section id="catalogue__non" class="py-5 bgLight catalogo">
         <h3>No disponibles</h3>
-        <div class="container">
+        <div class="container overflow-hidden">
           <div class="row gy-5 gx-5">
             <!-- Item pipa007 ini -->
             <article class="col-12 col-lg-6 col-xxl-4">
@@ -298,7 +298,7 @@
                                                 </div>
                                                 <div class="carousel-inner">
                                                   <div class="carousel-item active">
-                                                    <img src="../img_pipes/no_disponibles/img_pipe_md_007_1.jpg" class="d-block w-100" alt="pipa007_1">
+                                                    <img src="../pipes/no_disponibles/img_pipe_md_007_1.jpg" class="d-block w-100" alt="pipa007_1">
                                                   </div>
                                                   <div class="carousel-item">
                                                     <img src="../pipes/no_disponibles/img_pipe_md_007_2.jpg" class="d-block w-100" alt="pipa007_2">
@@ -331,9 +331,26 @@
             <!-- item pipa005 fin -->
           </div>
         </div>       
-    </section>
-    <!-- fin de la reforma -->
-    <footer id="pieDePagina" class="mt-5">
+      </section>
+      <section id="barraDeContactos">
+        <div class="barraDeContactos">
+          <h3>Dirección</h3>
+          <p>Chesterton 3345</p>
+          <p>Ricardo Rojas, Tigre</p>
+          <p>Bs As, Argentina</p>
+        </div>
+        <div class="barraDeContactos">
+          <h3>Contacto</h3>
+          <p>Teléfono: 011 5002 4793</p>
+          <p><a href="https://wa.me/541150024793">WhatsApp: 1150024793</a></p>
+          <p>e-mail: info@mail.com</p>
+        </div>
+        <div class="redesSociales">
+                  <a href="https://www.facebook.com/TripelArtesanias" target="_blank"><img src="../img_global/facebook.png" alt="socialmedia" height="50px" width="auto"></a>
+        </div>
+      </section>
+    </main>
+    <footer id="pieDePagina">
         <a href="#top">Volver arriba</a>
         <a href="../index.html">Volver al Inicio</a>
         <a href="https:/www.google.com/" target="_blank">Ir a la pagina de Google</a>
