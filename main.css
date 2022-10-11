@@ -87,7 +87,7 @@ input {
 .encabezado__logo {
   display: flex;
   align-items: flex-end;
-  background-image: url(../img_global/logotrip.png);
+  background-image: url(./img_global/logotrip.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -141,7 +141,7 @@ input {
 
 .intro {
   background-color: wheat;
-  background-image: url(../img_global/img_front_001.JPG);
+  background-image: url(./img_global/img_front_001.JPG);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

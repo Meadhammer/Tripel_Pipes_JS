@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "nombre": "Pipa Mate",
+        "precio": 12000,
+        "descripcion": "Pipa prototipo en forma de mate, con tiraje en 'U' apuntando hacia arriba emulando una bombilla. Cazoleta y boquilla en quebracho, con tiraje en aluminio.",
+        "imagenes": [
+            "https://i.postimg.cc/sXyzs88k/img-pipe-pr-001-1.jpg",
+            "https://i.postimg.cc/Y93H9RBh/img-pipe-pr-001-2.jpg", 
+            "https://i.postimg.cc/C5xVf8wJ/img-pipe-pr-001-3.jpg"
+        ],
+        "status": false,
+        "vendido": false,
+        "span": " "
+    },
+    {
+        "id": 2,
+        "nombre": "Stout Lecture",
+        "precio": 15000,
+        "descripcion": "Pipa de lectura robusta, tipo churchwarden. Cazoleta y boquilla en quebracho, con pequeña cámara de enfriado y detalles en bronce.",
+        "imagenes": [
+            "https://i.postimg.cc/pVcdJW3y/img-pipe-lg-002-1.jpg",
+            "https://i.postimg.cc/GhZh6MLC/img-pipe-lg-002-2.jpg",
+            "https://i.postimg.cc/ncshR8t2/img-pipe-lg-002-3.jpg"
+        ],
+        "status": false,
+        "vendido": false,
+        "span": " "
+    },
+    {
+        "id": 3,
+        "nombre": "O'Captain",
+        "precio": 18000,
+        "descripcion": "Pipa tipo capitán, mediana. Cazoleta y boquilla en quebracho con detalles en bronce. Cámara de enfriado tipo Calabash.",
+        "imagenes": [
+            "https://i.postimg.cc/W1NF5WX1/img-pipe-md-003-1.jpg",
+            "https://i.postimg.cc/qv1tSs5X/img-pipe-md-003-2.jpg",
+            "https://i.postimg.cc/JhtyLyww/img-pipe-md-003-3.jpg"
+        ],
+        "status": false,
+        "vendido": false,
+        "span": " "
+    }
+]
